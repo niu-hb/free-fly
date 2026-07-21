@@ -46,8 +46,12 @@ port: 7890
 profile:
   store-fake-ip: true
   store-selected: true
+
+# ============================================================
+# 代理节点（按国家分组，流水号递增）
+# ============================================================
 proxies:
-  # ===== 🇺🇸 美国 (4 节点) =====
+  # ===== 🇺🇸 美国 (1 节点) =====
   - name: 🇺🇸 节点 1
     password: gs4BXwT6SW
     port: 10988
@@ -56,44 +60,7 @@ proxies:
     type: http
     username: fQ67Dpe5dU
 
-  - multiplexing: MULTIPLEXING_LOW
-    name: 🇺🇸 节点 2
-    password: dongtaiwang.com
-    port: 34567
-    server: 157.254.223.44
-    transport: TCP
-    type: mieru
-    username: dongtaiwang.com
-
-  - alterId: 0
-    cipher: auto
-    client-fingerprint: safari
-    name: 🇺🇸 节点 3
-    network: tcp
-    port: 443
-    server: guanwang.awsno.com
-    servername: gw.alicdn.com
-    skip-cert-verify: true
-    tls: true
-    type: vmess
-    uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-
-  - cipher: 2022-blake3-aes-128-gcm
-    name: 🇺🇸 节点 4
-    password: YTE1ZWU4ZTEyZjc3YmEzZA==:Y2JhZTU3ODYtZjg3MC00NA==
-    plugin: gost-plugin
-    plugin-opts:
-      host: one.local
-      mode: websocket
-    mux: true
-    path: /ws
-    tls: false
-    port: 20090
-    server: 172.96.161.152
-    type: ss
-    udp: true
-
-  # ===== 🇷🇺 俄罗斯 (83 节点) =====
+  # ===== 🇷🇺 俄罗斯 (82 节点) =====
   - name: 🇷🇺 节点 1
     port: 9002
     server: 193.176.84.26
@@ -727,41 +694,6 @@ proxies:
     type: hysteria
     up: '500'
 
-  # ===== 🇳🇱 荷兰 (1 节点) =====
-  - client-fingerprint: chrome
-    name: 🇳🇱 节点 1
-    network: ws
-    password: HutaoCloud
-    port: 11543
-    server: 185.220.238.77
-    skip-cert-verify: true
-    sni: 185.220.238.77
-    type: trojan
-    udp: true
-    ws-opts:
-      headers:
-        User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36
-      path: /api
-
-  # ===== 🏳️ 未知 (1 节点) =====
-  - client-fingerprint: chrome
-    encryption: none
-    name: 🏳️ 节点 1
-    network: ws
-    port: 443
-    server: 1.tls.fastly.veraspeed.ir
-    servername: ssl.fastly.com
-    tls: true
-    type: vless
-    udp: true
-    uuid: 891710f4-45f3-41b1-99a6-6f1510f83c10
-    ws-opts:
-      headers:
-        Host: pan21.global.ssl.fastly.net
-        User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.63 Safari/537.36
-      path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053
-      xudp: true
-
   # ===== 🇰🇷 韩国 (1 节点) =====
   - name: 🇰🇷 节点 1
     password: ''
@@ -771,8 +703,11 @@ proxies:
     type: socks5
     username: ''
 
+# ============================================================
+# 代理组（仅保留国家分组 + 全局测速组）
+# ============================================================
 proxy-groups:
-  # 全部节点测速组
+  # 全部节点自动测速组
   - name: ♻️ 全部
     type: url-test
     interval: 300
@@ -781,9 +716,6 @@ proxy-groups:
     url: https://www.gstatic.com/generate_204
     proxies:
       - 🇺🇸 节点 1
-      - 🇺🇸 节点 2
-      - 🇺🇸 节点 3
-      - 🇺🇸 节点 4
       - 🇷🇺 节点 1
       - 🇷🇺 节点 2
       - 🇷🇺 节点 3
@@ -866,8 +798,6 @@ proxy-groups:
       - 🇷🇺 节点 80
       - 🇷🇺 节点 81
       - 🇷🇺 节点 82
-      - 🇳🇱 节点 1
-      - 🏳️ 节点 1
       - 🇰🇷 节点 1
 
   # 按国家分组（手动选择）
@@ -875,9 +805,6 @@ proxy-groups:
     type: select
     proxies:
       - 🇺🇸 节点 1
-      - 🇺🇸 节点 2
-      - 🇺🇸 节点 3
-      - 🇺🇸 节点 4
 
   - name: 🇷🇺 俄罗斯
     type: select
@@ -965,339 +892,14 @@ proxy-groups:
       - 🇷🇺 节点 81
       - 🇷🇺 节点 82
 
-  - name: 🇳🇱 荷兰
-    type: select
-    proxies:
-      - 🇳🇱 节点 1
-
-  - name: 🏳️ 未知
-    type: select
-    proxies:
-      - 🏳️ 节点 1
-
   - name: 🇰🇷 韩国
     type: select
     proxies:
       - 🇰🇷 节点 1
 
-  # 自动测速子组（仅引用已存在的节点）
-  - name: ♻️
-    type: url-test
-    interval: 300
-    lazy: true
-    tolerance: 50
-    url: https://www.gstatic.com/generate_204
-    proxies:
-      - 🇺🇸 节点 1
-      - 🇺🇸 节点 2
-      - 🇺🇸 节点 3
-      - 🇺🇸 节点 4
-      - 🇷🇺 节点 1
-      - 🇷🇺 节点 2
-      - 🇷🇺 节点 3
-      - 🇷🇺 节点 4
-      - 🇷🇺 节点 5
-      - 🇷🇺 节点 6
-      - 🇷🇺 节点 7
-      - 🇷🇺 节点 8
-      - 🇷🇺 节点 9
-      - 🇷🇺 节点 10
-      - 🇷🇺 节点 11
-      - 🇷🇺 节点 12
-      - 🇷🇺 节点 13
-      - 🇷🇺 节点 14
-      - 🇷🇺 节点 15
-      - 🇷🇺 节点 16
-      - 🇷🇺 节点 17
-      - 🇷🇺 节点 18
-      - 🇷🇺 节点 19
-      - 🇷🇺 节点 20
-      - 🇷🇺 节点 21
-      - 🇷🇺 节点 22
-      - 🇷🇺 节点 23
-      - 🇷🇺 节点 24
-      - 🇷🇺 节点 25
-      - 🇷🇺 节点 26
-      - 🇷🇺 节点 27
-      - 🇷🇺 节点 28
-      - 🇷🇺 节点 29
-      - 🇷🇺 节点 30
-      - 🇷🇺 节点 31
-      - 🇷🇺 节点 32
-      - 🇷🇺 节点 33
-      - 🇷🇺 节点 34
-      - 🇷🇺 节点 35
-      - 🇷🇺 节点 36
-      - 🇷🇺 节点 37
-      - 🇷🇺 节点 38
-      - 🇷🇺 节点 39
-      - 🇷🇺 节点 40
-      - 🇷🇺 节点 41
-      - 🇷🇺 节点 42
-      - 🇷🇺 节点 43
-      - 🇷🇺 节点 44
-      - 🇷🇺 节点 45
-      - 🇷🇺 节点 46
-      - 🇷🇺 节点 47
-      - 🇷🇺 节点 48
-      - 🇷🇺 节点 49
-      - 🇷🇺 节点 50
-      - 🇷🇺 节点 51
-      - 🇷🇺 节点 52
-      - 🇷🇺 节点 53
-      - 🇷🇺 节点 54
-      - 🇷🇺 节点 55
-      - 🇷🇺 节点 56
-      - 🇷🇺 节点 57
-      - 🇷🇺 节点 58
-      - 🇷🇺 节点 59
-      - 🇷🇺 节点 60
-      - 🇷🇺 节点 61
-      - 🇷🇺 节点 62
-      - 🇷🇺 节点 63
-      - 🇷🇺 节点 64
-      - 🇷🇺 节点 65
-      - 🇷🇺 节点 66
-      - 🇷🇺 节点 67
-      - 🇷🇺 节点 68
-      - 🇷🇺 节点 69
-      - 🇷🇺 节点 70
-      - 🇷🇺 节点 71
-      - 🇷🇺 节点 72
-      - 🇷🇺 节点 73
-      - 🇷🇺 节点 74
-      - 🇷🇺 节点 75
-      - 🇷🇺 节点 76
-      - 🇷🇺 节点 77
-      - 🇷🇺 节点 78
-      - 🇷🇺 节点 79
-      - 🇷🇺 节点 80
-      - 🇷🇺 节点 81
-      - 🇷🇺 节点 82
-      - 🇳🇱 节点 1
-      - 🏳️ 节点 1
-      - 🇰🇷 节点 1
-
-  # 功能分组
-  - name: 🛡️
-    proxies:
-      - REJECT
-      - DIRECT
-    type: select
-
-  - name: 📺
-    type: fallback
-    interval: 300
-    lazy: true
-    tolerance: 100
-    url: https://www.youtube.com/generate_204
-    proxies:
-      - 🇺🇸 节点 4
-      - 🇺🇸 节点 1
-      - 🇺🇸 节点 2
-      - 🇺🇸 节点 3
-      - 🇷🇺 节点 1
-      - 🇷🇺 节点 2
-      - 🇷🇺 节点 3
-      - ♻️
-
-  - name: 🎵
-    type: fallback
-    interval: 400
-    lazy: true
-    tolerance: 80
-    url: https://www.gstatic.com/generate_204
-    proxies:
-      - 🇺🇸 节点 4
-      - 🇺🇸 节点 1
-      - 🇺🇸 节点 2
-      - 🇺🇸 节点 3
-      - 🇷🇺 节点 1
-      - 🇷🇺 节点 2
-      - 🇷🇺 节点 3
-      - ♻️
-
-  - name: 🐧
-    type: fallback
-    interval: 300
-    lazy: true
-    tolerance: 100
-    url: https://linux.do
-    proxies:
-      - 🇺🇸 节点 4
-      - 🇺🇸 节点 1
-      - 🇺🇸 节点 2
-      - 🇺🇸 节点 3
-      - 🇷🇺 节点 1
-      - 🇷🇺 节点 2
-      - 🇷🇺 节点 3
-      - ♻️
-
-  - name: 💬
-    type: fallback
-    interval: 300
-    lazy: true
-    tolerance: 50
-    url: https://www.gstatic.com/generate_204
-    proxies:
-      - 🇺🇸 节点 4
-      - 🇺🇸 节点 1
-      - 🇺🇸 节点 2
-      - 🇺🇸 节点 3
-      - 🇷🇺 节点 1
-      - 🇷🇺 节点 2
-      - 🇷🇺 节点 3
-      - ♻️
-
-  - name: 📥
-    type: load-balance
-    interval: 600
-    lazy: true
-    strategy: consistent-hashing
-    url: https://www.gstatic.com/generate_204
-    proxies:
-      - 🇺🇸 节点 4
-      - 🇺🇸 节点 1
-      - ♻️
-
-  - name: 🎬
-    type: fallback
-    interval: 600
-    lazy: true
-    tolerance: 150
-    url: https://www.netflix.com/title/81215567
-    proxies:
-      - 🇺🇸 节点 4
-      - 🇺🇸 节点 1
-      - 🇺🇸 节点 2
-      - 🇺🇸 节点 3
-      - ♻️
-
-  - name: 🎭
-    type: fallback
-    interval: 600
-    lazy: true
-    tolerance: 150
-    url: https://www.disneyplus.com
-    proxies:
-      - 🇺🇸 节点 4
-      - 🇺🇸 节点 1
-      - 🇺🇸 节点 2
-      - 🇺🇸 节点 3
-      - ♻️
-
-  - name: 🎪
-    type: fallback
-    interval: 400
-    lazy: true
-    tolerance: 100
-    url: https://www.gstatic.com/generate_204
-    proxies:
-      - 🇺🇸 节点 4
-      - 🇺🇸 节点 1
-      - 🇺🇸 节点 2
-      - 🇺🇸 节点 3
-      - 🇷🇺 节点 1
-      - 🇷🇺 节点 2
-      - 🇷🇺 节点 3
-      - 🇺🇸 美国
-      - ♻️
-
-  - name: 🤖
-    type: fallback
-    interval: 300
-    lazy: true
-    tolerance: 100
-    url: https://ios.chat.openai.com/public-api/mobile/server_status/v1
-    proxies:
-      - 🇺🇸 节点 4
-      - 🇺🇸 节点 1
-      - 🇺🇸 节点 2
-      - 🇺🇸 节点 3
-      - 🇷🇺 节点 1
-      - 🇷🇺 节点 2
-      - 🇷🇺 节点 3
-      - 🇺🇸 美国
-      - ♻️
-
-  - name: ✨
-    type: fallback
-    interval: 600
-    lazy: true
-    tolerance: 150
-    url: https://www.genspark.ai/
-    proxies:
-      - 🇺🇸 节点 4
-      - 🇺🇸 节点 1
-      - 🇺🇸 节点 2
-      - 🇺🇸 节点 3
-      - 🇷🇺 节点 1
-      - 🇷🇺 节点 2
-      - 🇷🇺 节点 3
-      - 🇺🇸 美国
-      - ♻️
-
-  - name: 🔀
-    type: fallback
-    interval: 600
-    lazy: true
-    tolerance: 150
-    url: https://anyrouter.top/
-    proxies:
-      - 🇺🇸 节点 4
-      - 🇺🇸 节点 1
-      - 🇺🇸 节点 2
-      - 🇺🇸 节点 3
-      - 🇷🇺 节点 1
-      - 🇷🇺 节点 2
-      - 🇷🇺 节点 3
-      - 🇺🇸 美国
-      - ♻️
-
-  - name: 🌍
-    type: select
-    proxies:
-      - ♻️
-      - 🇺🇸 美国
-      - DIRECT
-
-  - name: 📹
-    type: select
-    proxies:
-      - 🎬
-      - 📺
-      - 🎭
-      - 🎵
-      - 🎪
-      - ♻️
-
-  - name: 🚀
-    type: select
-    proxies:
-      - ♻️
-      - 📹
-      - 🤖
-      - ✨
-      - 🔀
-      - 🐧
-      - 🇺🇸 美国
-      - 🇰🇷 韩国
-      - DIRECT
-
-  - name: 🎯
-    type: select
-    proxies:
-      - DIRECT
-      - 🚀
-      - ♻️
-
-  - name: 🐟
-    type: select
-    proxies:
-      - 🚀
-      - ♻️
-      - DIRECT
-
+# ============================================================
+# 规则提供者（保留原有配置）
+# ============================================================
 rule-providers:
   ai_non_ip:
     behavior: classical
@@ -1384,43 +986,46 @@ rule-providers:
     type: http
     url: https://ruleset.skk.moe/Clash/ip/telegram.txt
 
+# ============================================================
+# 路由规则（保留原有配置）
+# ============================================================
 rules:
-  - RULE-SET,reject_non_ip,🛡️
-  - DOMAIN-SUFFIX,youtube.com,📺
-  - DOMAIN-SUFFIX,googlevideo.com,📺
-  - DOMAIN-SUFFIX,ytimg.com,📺
-  - DOMAIN-SUFFIX,ggpht.com,📺
-  - DOMAIN-SUFFIX,spotify.com,🎵
-  - DOMAIN-SUFFIX,scdn.co,🎵
-  - DOMAIN-SUFFIX,linux.do,🐧
-  - RULE-SET,telegram_ip,💬
-  - RULE-SET,download_domainset,📥
-  - RULE-SET,download_non_ip,📥
-  - DOMAIN-SUFFIX,netflix.com,🎬
-  - DOMAIN-SUFFIX,nflxvideo.net,🎬
-  - DOMAIN-SUFFIX,disneyplus.com,🎭
-  - DOMAIN-SUFFIX,disney-plus.net,🎭
-  - DOMAIN-SUFFIX,tiktok.com,🎪
-  - DOMAIN-SUFFIX,tiktokcdn.com,🎪
-  - RULE-SET,ai_non_ip,🤖
-  - DOMAIN-SUFFIX,openai.com,🤖
-  - DOMAIN-SUFFIX,chatgpt.com,🤖
-  - DOMAIN-SUFFIX,oaistatic.com,🤖
-  - DOMAIN-SUFFIX,anthropic.com,🤖
-  - DOMAIN-SUFFIX,claude.ai,🤖
-  - DOMAIN-SUFFIX,perplexity.ai,🤖
-  - DOMAIN-SUFFIX,genspark.ai,✨
-  - DOMAIN-SUFFIX,anyrouter.top,🔀
-  - RULE-SET,global_non_ip,🌍
-  - RULE-SET,stream_non_ip,📹
-  - RULE-SET,stream_ip,📹
-  - DOMAIN-KEYWORD,997268,🎯
-  - RULE-SET,domestic_non_ip,🎯
-  - RULE-SET,domestic_ip,🎯
-  - RULE-SET,direct_non_ip,🎯
-  - RULE-SET,cdn_domainset,🎯
-  - GEOIP,CN,🎯
-  - MATCH,🐟
+  - RULE-SET,reject_non_ip,REJECT
+  - DOMAIN-SUFFIX,youtube.com,🇺🇸 美国
+  - DOMAIN-SUFFIX,googlevideo.com,🇺🇸 美国
+  - DOMAIN-SUFFIX,ytimg.com,🇺🇸 美国
+  - DOMAIN-SUFFIX,ggpht.com,🇺🇸 美国
+  - DOMAIN-SUFFIX,spotify.com,🇺🇸 美国
+  - DOMAIN-SUFFIX,scdn.co,🇺🇸 美国
+  - DOMAIN-SUFFIX,linux.do,🇺🇸 美国
+  - RULE-SET,telegram_ip,🇷🇺 俄罗斯
+  - RULE-SET,download_domainset,🇺🇸 美国
+  - RULE-SET,download_non_ip,🇺🇸 美国
+  - DOMAIN-SUFFIX,netflix.com,🇺🇸 美国
+  - DOMAIN-SUFFIX,nflxvideo.net,🇺🇸 美国
+  - DOMAIN-SUFFIX,disneyplus.com,🇺🇸 美国
+  - DOMAIN-SUFFIX,disney-plus.net,🇺🇸 美国
+  - DOMAIN-SUFFIX,tiktok.com,🇺🇸 美国
+  - DOMAIN-SUFFIX,tiktokcdn.com,🇺🇸 美国
+  - RULE-SET,ai_non_ip,🇺🇸 美国
+  - DOMAIN-SUFFIX,openai.com,🇺🇸 美国
+  - DOMAIN-SUFFIX,chatgpt.com,🇺🇸 美国
+  - DOMAIN-SUFFIX,oaistatic.com,🇺🇸 美国
+  - DOMAIN-SUFFIX,anthropic.com,🇺🇸 美国
+  - DOMAIN-SUFFIX,claude.ai,🇺🇸 美国
+  - DOMAIN-SUFFIX,perplexity.ai,🇺🇸 美国
+  - DOMAIN-SUFFIX,genspark.ai,🇺🇸 美国
+  - DOMAIN-SUFFIX,anyrouter.top,🇺🇸 美国
+  - RULE-SET,global_non_ip,🇺🇸 美国
+  - RULE-SET,stream_non_ip,🇺🇸 美国
+  - RULE-SET,stream_ip,🇺🇸 美国
+  - DOMAIN-KEYWORD,997268,DIRECT
+  - RULE-SET,domestic_non_ip,DIRECT
+  - RULE-SET,domestic_ip,DIRECT
+  - RULE-SET,direct_non_ip,DIRECT
+  - RULE-SET,cdn_domainset,🇺🇸 美国
+  - GEOIP,CN,DIRECT
+  - MATCH,♻️ 全部
 
 secret: ''
 socks-port: 7891
