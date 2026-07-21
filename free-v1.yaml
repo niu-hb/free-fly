@@ -4,42 +4,19 @@ mode: rule
 log-level: info
 
 proxies:
-- name: 12-hysteria2-hysteria2-11309677
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: vpn-jp-002.fastervpn.world
-  skip-cert-verify: true
-  sni: vpn-jp-002.fastervpn.world
-  type: hysteria2
 - name: 44-hysteria2-hysteria2-145039
-  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  port: 443
-  server: vpn-sg-001.fastervpn.world
-  skip-cert-verify: true
-  sni: vpn-sg-001.fastervpn.world
   type: hysteria2
+  server: vpn-sg-001.fastervpn.world
+  port: 443
+  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+  sni: vpn-sg-001.fastervpn.world
+  skip-cert-verify: true
 
 proxy-groups:
 - name: select
   type: select
   proxies:
-  - 12-hysteria2-hysteria2-11309677
   - 44-hysteria2-hysteria2-145039
 
 rules:
-# 国内域名直连
-- DOMAIN-SUFFIX,cn,DIRECT
-- DOMAIN-SUFFIX,qq.com,DIRECT
-- DOMAIN-SUFFIX,wechat.com,DIRECT
-- DOMAIN-SUFFIX,aliyun.com,DIRECT
-- DOMAIN-SUFFIX,taobao.com,DIRECT
-- DOMAIN-SUFFIX,baidu.com,DIRECT
-
-# 局域网直连
-- IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
-- IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
-- IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
-- IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
-
-# 其余境外走代理
 - MATCH,select
