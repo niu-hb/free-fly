@@ -1,3 +1,8 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+
 proxies:
 - name: 12-hysteria2-hysteria2-11309677
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
@@ -6,7 +11,6 @@ proxies:
   skip-cert-verify: true
   sni: vpn-jp-002.fastervpn.world
   type: hysteria2
-
 - name: 44-hysteria2-hysteria2-145039
   password: qQe1z5kU8kN6SlKnDt9Ru3Qp
   port: 443
@@ -21,21 +25,21 @@ proxy-groups:
   proxies:
   - 12-hysteria2-hysteria2-11309677
   - 44-hysteria2-hysteria2-145039
-  - DIRECT
 
 rules:
 # 国内域名直连
 - DOMAIN-SUFFIX,cn,DIRECT
-- DOMAIN-KEYWORD,baidu,DIRECT
-- DOMAIN-KEYWORD,qq,DIRECT
-- DOMAIN-KEYWORD,weixin,DIRECT
-- DOMAIN-KEYWORD,aliyun,DIRECT
-
-# 国内 IP 直连
-- GEOIP,CN,DIRECT
+- DOMAIN-SUFFIX,qq.com,DIRECT
+- DOMAIN-SUFFIX,wechat.com,DIRECT
+- DOMAIN-SUFFIX,aliyun.com,DIRECT
+- DOMAIN-SUFFIX,taobao.com,DIRECT
+- DOMAIN-SUFFIX,baidu.com,DIRECT
 
 # 局域网直连
-- GEOIP,LAN,DIRECT
+- IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
+- IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
+- IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
+- IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
 
-# 其余境外流量走代理
+# 其余境外走代理
 - MATCH,select
