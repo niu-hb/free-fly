@@ -54,625 +54,598 @@ proxies:
   tls: false
   type: http
   username: fQ67Dpe5dU
-- client-fingerprint: chrome
+- multiplexing: MULTIPLEXING_LOW
   name: 🇺🇸 节点 2
-  network: ws
+  password: dongtaiwang.com
+  port: 34567
+  server: 157.254.223.44
+  transport: TCP
+  type: mieru
+  username: dongtaiwang.com
+- alterId: 0
+  cipher: auto
+  client-fingerprint: safari
+  name: 🇺🇸 节点 3
+  network: tcp
   port: 443
-  server: 199.232.249.110
-  servername: ssl.fastly.com
+  server: guanwang.awsno.com
+  servername: gw.alicdn.com
+  skip-cert-verify: true
   tls: true
-  type: vless
+  type: vmess
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+- cipher: 2022-blake3-aes-128-gcm
+  name: 🇺🇸 节点 4
+  password: YTE1ZWU4ZTEyZjc3YmEzZA==:Y2JhZTU3ODYtZjg3MC00NA==
+  plugin: gost-plugin
+  plugin-opts:
+    host: one.local
+    mode: websocket
+    mux: true
+    path: /ws
+    tls: false
+  port: 20090
+  server: 172.96.161.152
+  type: ss
   udp: true
-  uuid: cbcf2255-6d66-4039-b7d6-c10d6ffc99e7
-  ws-opts:
-    headers:
-      Host: pan1.global.ssl.fastly.net
-      User-Agent: Mozilla/5.0 (Linux; Android 7.0; TRT-LX2 Build/HUAWEITRT-LX2; wv)
-        AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/59.0.3071.125 Mobile
-        Safari/537.36
-    path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed
-  xudp: true
-- client-fingerprint: chrome
-  encryption: none
-  name: 🏳️ 节点 3
-  network: ws
-  port: 443
-  server: cf4.466688.xyz
-  servername: cfoo-146.pages.dev
-  tls: true
-  type: vless
-  udp: true
-  uuid: b08562b0-dbc0-47d1-860d-9435133b25c9
-  ws-opts:
-    headers:
-      Host: cfoo-146.pages.dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/69.0.3497.100 Safari/537.36
-    path: /QiangLieTuiJian?ed=2560
-  xudp: true
-- name: 🏳️ 节点 4
-  network: ws
-  port: 2086
-  server: cs3iiova.cf.3666888.xyz
-  type: vless
-  udp: true
-  uuid: 4a805850-a2c4-42b3-898a-798f0c19c609
-  ws-opts:
-    headers:
-      Host: od1kl638.xn--nxa.nyc.mn
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/68.0.3440.106 Safari/537.36
-    path: /sub
-  xudp: true
-- name: 🇺🇸 节点 5
+- name: 🇷🇺 节点 1
   port: 9002
   server: 193.176.84.26
   skip-cert-verify: true
   sni: www.bing.com
   tls: true
   type: http
-- name: 🇺🇸 节点 6
+- name: 🇷🇺 节点 2
   port: 9002
   server: 193.176.84.24
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇺🇸 节点 7
+- name: 🇷🇺 节点 3
   port: 9002
   server: 193.176.84.37
   skip-cert-verify: true
   sni: www.bing.com
   tls: true
   type: http
-- name: 🇺🇸 节点 8
+- name: 🇷🇺 节点 4
   port: 9002
   server: 193.176.84.39
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇺🇸 节点 9
+- name: 🇷🇺 节点 5
   port: 9002
   server: 193.176.84.32
   skip-cert-verify: true
   sni: www.bing.com
   tls: true
   type: http
-- name: 🏳️ 节点 10
-  password: test.+
-  port: 30446
-  server: testkr3.ssv.vc
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-  username: test
-- name: 🇷🇺 节点 11
+- name: 🇷🇺 节点 6
   port: 9002
   server: 84.239.14.146
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇷🇺 节点 12
+- name: 🇷🇺 节点 7
   port: 9002
   server: 84.239.49.176
   skip-cert-verify: true
   sni: www.bing.com
   tls: true
   type: http
-- name: 🇺🇸 节点 13
+- name: 🇷🇺 节点 8
   port: 9002
   server: 193.176.84.36
   skip-cert-verify: true
   sni: www.bing.com
   tls: true
   type: http
-- name: 🇺🇸 节点 14
-  port: 9002
-  server: 193.176.84.34
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇷🇺 节点 15
+- name: 🇷🇺 节点 9
   port: 9002
   server: 84.239.49.38
   skip-cert-verify: true
   sni: www.bing.com
   tls: true
   type: http
-- name: 🇷🇺 节点 16
+- name: 🇷🇺 节点 10
   port: 9002
   server: 84.239.49.223
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇷🇺 节点 17
+- name: 🇷🇺 节点 11
   port: 9002
   server: 84.239.49.154
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇷🇺 节点 18
+- name: 🇷🇺 节点 12
   port: 9002
   server: 84.239.49.227
   skip-cert-verify: true
   sni: www.bing.com
   tls: true
   type: http
-- name: 🇷🇺 节点 19
+- name: 🇷🇺 节点 13
   port: 9002
   server: 84.239.49.224
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇷🇺 节点 20
+- name: 🇷🇺 节点 14
   port: 9002
   server: 84.239.49.225
   skip-cert-verify: true
   sni: www.bing.com
   tls: true
   type: http
-- name: 🇷🇺 节点 21
+- name: 🇷🇺 节点 15
   port: 9002
   server: 84.239.49.156
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇷🇺 节点 22
+- name: 🇷🇺 节点 16
   port: 9002
   server: 84.239.49.159
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇷🇺 节点 23
+- name: 🇷🇺 节点 17
   port: 9002
   server: 84.239.49.233
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇷🇺 节点 24
+- name: 🇷🇺 节点 18
   port: 9002
   server: 84.239.49.178
   skip-cert-verify: true
   sni: www.bing.com
   tls: true
   type: http
-- name: 🇷🇺 节点 25
+- name: 🇷🇺 节点 19
   port: 9002
   server: 84.239.14.160
   skip-cert-verify: true
   sni: www.bing.com
   tls: true
   type: http
-- name: 🇷🇺 节点 26
+- name: 🇷🇺 节点 20
   port: 9002
   server: 84.239.49.180
   skip-cert-verify: true
   sni: www.bing.com
   tls: true
   type: http
-- name: 🇷🇺 节点 27
+- name: 🇷🇺 节点 21
   port: 9002
   server: 84.239.14.148
   skip-cert-verify: true
   sni: www.bing.com
   tls: true
   type: http
-- name: 🇷🇺 节点 28
+- name: 🇷🇺 节点 22
   port: 9002
   server: 84.239.49.249
   skip-cert-verify: true
   sni: www.bing.com
   tls: true
   type: http
-- name: 🇷🇺 节点 29
+- name: 🇷🇺 节点 23
   port: 9002
   server: 84.239.49.42
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇷🇺 节点 30
+- name: 🇷🇺 节点 24
   port: 9002
   server: 84.239.49.160
   skip-cert-verify: true
   sni: www.bing.com
   tls: true
   type: http
-- name: 🇷🇺 节点 31
+- name: 🇷🇺 节点 25
   port: 9002
   server: 84.239.49.234
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇷🇺 节点 32
+- name: 🇷🇺 节点 26
   port: 9002
   server: 84.239.14.147
   skip-cert-verify: true
   sni: www.bing.com
   tls: true
   type: http
-- name: 🇷🇺 节点 33
+- name: 🇷🇺 节点 27
   port: 9002
   server: 84.239.49.247
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇷🇺 节点 34
+- name: 🇷🇺 节点 28
   port: 9002
   server: 84.239.14.159
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇺🇸 节点 35
+- name: 🇷🇺 节点 29
   port: 9002
   server: 193.176.84.27
   skip-cert-verify: true
   sni: www.bing.com
   tls: true
   type: http
-- name: 🇷🇺 节点 36
+- name: 🇷🇺 节点 30
   port: 9002
   server: 84.239.14.154
   skip-cert-verify: true
   sni: www.bing.com
   tls: true
   type: http
-- name: 🇷🇺 节点 37
+- name: 🇷🇺 节点 31
   port: 9002
   server: 84.239.49.254
   skip-cert-verify: true
   sni: www.bing.com
   tls: true
   type: http
-- name: 🇷🇺 节点 38
+- name: 🇷🇺 节点 32
   port: 9002
   server: 84.239.49.212
   skip-cert-verify: true
   sni: www.bing.com
   tls: true
   type: http
-- name: 🇷🇺 节点 39
+- name: 🇷🇺 节点 33
   port: 9002
   server: 84.239.49.240
   skip-cert-verify: true
   sni: www.bing.com
   tls: true
   type: http
-- name: 🇷🇺 节点 40
+- name: 🇷🇺 节点 34
   port: 9002
   server: 84.239.49.239
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇷🇺 节点 41
+- name: 🇷🇺 节点 35
   port: 9002
   server: 84.239.14.158
   skip-cert-verify: true
   tls: true
   type: http
   udp: true
-- name: 🇷🇺 节点 42
+- name: 🇷🇺 节点 36
   port: 9002
   server: 84.239.49.185
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇺🇸 节点 43
+- name: 🇷🇺 节点 37
   port: 9002
   server: 193.176.84.19
   skip-cert-verify: true
   sni: www.bing.com
   tls: true
   type: http
-- name: 🇷🇺 节点 44
+- name: 🇷🇺 节点 38
   port: 9002
   server: 84.239.49.164
   skip-cert-verify: true
   sni: www.bing.com
   tls: true
   type: http
-- name: 🇷🇺 节点 45
+- name: 🇷🇺 节点 39
   port: 9002
   server: 84.239.49.55
   skip-cert-verify: true
   sni: www.bing.com
   tls: true
   type: http
-- name: 🇷🇺 节点 46
+- name: 🇷🇺 节点 40
   port: 9002
   server: 84.239.49.198
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇷🇺 节点 47
+- name: 🇷🇺 节点 41
   port: 9002
   server: 84.239.49.231
   skip-cert-verify: true
   sni: www.bing.com
   tls: true
   type: http
-- name: 🇷🇺 节点 48
+- name: 🇷🇺 节点 42
   port: 9002
   server: 84.239.49.191
   skip-cert-verify: true
   sni: www.bing.com
   tls: true
   type: http
-- name: 🇷🇺 节点 49
+- name: 🇷🇺 节点 43
   port: 9002
   server: 84.239.49.204
   skip-cert-verify: true
   sni: www.bing.com
   tls: true
   type: http
-- name: 🇷🇺 节点 50
+- name: 🇷🇺 节点 44
   port: 9002
   server: 84.239.49.238
   skip-cert-verify: true
   sni: www.bing.com
   tls: true
   type: http
-- name: 🇷🇺 节点 51
+- name: 🇷🇺 节点 45
   port: 9002
   server: 84.239.49.209
   skip-cert-verify: true
   sni: www.bing.com
   tls: true
   type: http
-- name: 🇷🇺 节点 52
+- name: 🇷🇺 节点 46
   port: 9002
   server: 84.239.49.161
   skip-cert-verify: true
   sni: www.bing.com
   tls: true
   type: http
-- name: 🇷🇺 节点 53
+- name: 🇷🇺 节点 47
   port: 9002
   server: 84.239.49.57
   skip-cert-verify: true
   sni: www.bing.com
   tls: true
   type: http
-- name: 🇷🇺 节点 54
+- name: 🇷🇺 节点 48
   port: 9002
   server: 84.239.49.163
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇺🇸 节点 55
+- name: 🇷🇺 节点 49
   port: 9002
   server: 193.176.84.25
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇷🇺 节点 56
+- name: 🇷🇺 节点 50
   port: 9002
   server: 84.239.49.173
   skip-cert-verify: true
   sni: www.bing.com
   tls: true
   type: http
-- name: 🇷🇺 节点 57
+- name: 🇷🇺 节点 51
   port: 9002
   server: 84.239.49.157
   skip-cert-verify: true
   sni: www.bing.com
   tls: true
   type: http
-- name: 🇷🇺 节点 58
+- name: 🇷🇺 节点 52
   port: 9002
   server: 84.239.49.215
   skip-cert-verify: true
   sni: www.bing.com
   tls: true
   type: http
-- name: 🇷🇺 节点 59
+- name: 🇷🇺 节点 53
   port: 9002
   server: 84.239.49.245
   skip-cert-verify: true
   sni: www.bing.com
   tls: true
   type: http
-- name: 🇷🇺 节点 60
+- name: 🇷🇺 节点 54
   port: 9002
   server: 84.239.49.40
   skip-cert-verify: true
   sni: www.bing.com
   tls: true
   type: http
-- name: 🇷🇺 节点 61
+- name: 🇷🇺 节点 55
   port: 9002
   server: 84.239.49.253
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇷🇺 节点 62
+- name: 🇷🇺 节点 56
   port: 9002
   server: 84.239.49.162
   skip-cert-verify: true
   sni: www.bing.com
   tls: true
   type: http
-- name: 🇷🇺 节点 63
+- name: 🇷🇺 节点 57
   port: 9002
   server: 84.239.49.201
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇷🇺 节点 64
+- name: 🇷🇺 节点 58
   port: 9002
   server: 84.239.49.183
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇺🇸 节点 65
+- name: 🇷🇺 节点 59
   port: 9002
   server: 193.176.84.31
   skip-cert-verify: true
   sni: www.bing.com
   tls: true
   type: http
-- name: 🇷🇺 节点 66
+- name: 🇷🇺 节点 60
   port: 9002
   server: 84.239.49.175
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇺🇸 节点 67
+- name: 🇷🇺 节点 61
   port: 1080
   server: 5.255.99.75
   type: socks5
-- name: 🇷🇺 节点 68
+- name: 🇷🇺 节点 62
   port: 9002
   server: 84.239.49.207
   skip-cert-verify: true
   sni: www.bing.com
   tls: true
   type: http
-- name: 🇷🇺 节点 69
+- name: 🇷🇺 节点 63
   port: 9002
   server: 84.239.49.155
   skip-cert-verify: true
   sni: www.bing.com
   tls: true
   type: http
-- name: 🇷🇺 节点 70
+- name: 🇷🇺 节点 64
   port: 9002
   server: 84.239.49.199
   skip-cert-verify: true
   sni: www.bing.com
   tls: true
   type: http
-- name: 🇷🇺 节点 71
+- name: 🇷🇺 节点 65
   port: 9002
   server: 84.239.49.202
   skip-cert-verify: true
   sni: www.bing.com
   tls: true
   type: http
-- name: 🇷🇺 节点 72
+- name: 🇷🇺 节点 66
   port: 9002
   server: 84.239.49.211
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇷🇺 节点 73
+- name: 🇷🇺 节点 67
   port: 9002
   server: 84.239.49.214
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇷🇺 节点 74
+- name: 🇷🇺 节点 68
   port: 9002
   server: 84.239.49.184
   skip-cert-verify: true
   sni: www.bing.com
   tls: true
   type: http
-- name: 🇷🇺 节点 75
+- name: 🇷🇺 节点 69
   port: 9002
   server: 84.239.49.196
   skip-cert-verify: true
   sni: www.bing.com
   tls: true
   type: http
-- name: 🇷🇺 节点 76
+- name: 🇷🇺 节点 70
   port: 9002
   server: 84.239.49.187
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇷🇺 节点 77
+- name: 🇷🇺 节点 71
   port: 9002
   server: 84.239.49.171
   skip-cert-verify: true
   sni: www.bing.com
   tls: true
   type: http
-- name: 🇷🇺 节点 78
+- name: 🇷🇺 节点 72
   port: 9002
   server: 84.239.49.219
   skip-cert-verify: true
   tls: true
   type: http
-- client-fingerprint: chrome
-  name: 🇺🇸 节点 79
-  network: ws
-  port: 443
-  server: 167.82.77.173
-  servername: ssl.fastly.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 891710f4-45f3-41b1-99a6-6f1510f83c10
-  ws-opts:
-    headers:
-      Host: pan21.global.ssl.fastly.net
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/36.0.1985.125 Safari/537.36
-    path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed
-  xudp: true
-- name: 🇷🇺 节点 80
+- name: 🇷🇺 节点 73
   port: 9002
   server: 84.239.49.39
   skip-cert-verify: true
   sni: www.bing.com
   tls: true
   type: http
-- name: 🇷🇺 节点 81
+- name: 🇷🇺 节点 74
   port: 9002
   server: 84.239.49.37
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇺🇸 节点 82
-  port: 443
-  server: 103.62.50.130
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇷🇺 节点 83
+- name: 🇷🇺 节点 75
   port: 9002
   server: 84.239.14.157
   skip-cert-verify: true
   sni: www.bing.com
   tls: true
   type: http
-- name: 🇷🇺 节点 84
+- name: 🇷🇺 节点 76
   port: 9002
   server: 84.239.49.170
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇷🇺 节点 85
+- name: 🇷🇺 节点 77
   port: 9002
   server: 84.239.49.166
   skip-cert-verify: true
   sni: www.bing.com
   tls: true
   type: http
-- name: 🇷🇺 节点 86
+- name: 🇷🇺 节点 78
   port: 9002
   server: 84.239.14.149
   skip-cert-verify: true
   sni: www.bing.com
   tls: true
   type: http
-- name: 🇷🇺 节点 87
+- name: 🇷🇺 节点 79
   port: 9002
   server: 84.239.49.182
   skip-cert-verify: true
   sni: www.bing.com
   tls: true
   type: http
-- name: 🇷🇺 节点 88
+- name: 🇷🇺 节点 80
   port: 9002
   server: 84.239.14.152
   skip-cert-verify: true
   sni: www.bing.com
   tls: true
   type: http
+- name: 🇷🇺 节点 81
+  port: 9002
+  server: 84.239.49.235
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: true
+  type: http
+- alpn:
+  - h3
+  auth_str: dongtaiwang.com
+  down: '1000'
+  name: 🇷🇺 节点 82
+  obfs: ''
+  port: 54177
+  protocol: udp
+  server: 5.83.129.90
+  skip-cert-verify: true
+  sni: apple.com
+  type: hysteria
+  up: '500'
+- name: 🇷🇺 节点 83
+  port: 9002
+  server: 84.239.49.242
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: true
+  type: http
 - client-fingerprint: chrome
-  name: 🇺🇸 节点 89
+  name: 🇳🇱 节点 1
   network: ws
   password: HutaoCloud
   port: 11543
@@ -686,200 +659,337 @@ proxies:
       User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36
         (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36
     path: /api
-- name: 🇷🇺 节点 90
-  port: 9002
-  server: 84.239.49.235
-  skip-cert-verify: true
-  sni: www.bing.com
-  tls: true
-  type: http
-- alpn:
-  - h3
-  auth_str: dongtaiwang.com
-  down: '1000'
-  name: 🇺🇸 节点 91
-  obfs: ''
-  port: 54177
-  protocol: udp
-  server: 5.83.129.90
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria
-  up: '500'
-- alpn:
-  - h3
-  auth-str: dongtaiwang.com
-  down: '1000'
-  name: 🇺🇸 节点 92
-  port: 20088
-  protocol: udp
-  server: 5.83.129.153
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria
-  up: '500'
-- name: 🇷🇺 节点 93
-  port: 9002
-  server: 84.239.49.242
-  skip-cert-verify: true
-  sni: www.bing.com
-  tls: true
-  type: http
 - client-fingerprint: chrome
-  name: 🏳️ 节点 94
-  network: tcp
-  password: OccIqeORGQwiNkwS
-  port: 19128
-  server: jpbgp.netvigor.cc
-  skip-cert-verify: false
-  sni: yazhou10.dynu.net
-  type: trojan
-  udp: true
-- down: ''
-  fingerprint: ''
-  name: 🏳️ 节点 95
-  obfs: salamander
-  obfs-password: eNM/NfxTsBqQIKcN0ezARS1z0f5mIxRd9GSwhVsyJlo=
-  password: f7cb07a0-e6f9-4d22-a60e-c61854450c89
+  encryption: none
+  name: 🏳️ 节点 1
+  network: ws
   port: 443
-  server: ff2.yuntong.click
-  skip-cert-verify: false
-  sni: ff2.yuntong.click
-  type: hysteria2
-  up: ''
-- multiplexing: MULTIPLEXING_LOW
-  name: 🇺🇸 节点 96
-  password: dongtaiwang.com
-  port: 34567
-  server: 157.254.223.44
-  transport: TCP
-  type: mieru
-  username: dongtaiwang.com
-- name: 🇯🇵 节点 97
+  server: 1.tls.fastly.veraspeed.ir
+  servername: ssl.fastly.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 891710f4-45f3-41b1-99a6-6f1510f83c10
+  ws-opts:
+    headers:
+      Host: pan21.global.ssl.fastly.net
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/51.0.2704.63 Safari/537.36
+    path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053
+  xudp: true
+- name: 🇰🇷 节点 1
   password: ''
   port: 1090
   server: 121.169.46.116
   skip-cert-verify: true
   type: socks5
   username: ''
-- cipher: 2022-blake3-aes-128-gcm
-  name: 🇺🇸 节点 98
-  password: YTE1ZWU4ZTEyZjc3YmEzZA==:Y2JhZTU3ODYtZjg3MC00NA==
-  plugin: gost-plugin
-  plugin-opts:
-    host: one.local
-    mode: websocket
-    mux: true
-    path: /ws
-    tls: false
-  port: 20090
-  server: 172.96.161.152
-  type: ss
-  udp: true
 proxy-groups:
+- name: ♻️ 全部
+  type: url-test
+  interval: 300
+  lazy: true
+  tolerance: 50
+  url: https://www.gstatic.com/generate_204
+  proxies:
+  - 🇺🇸 节点 1
+  - 🇺🇸 节点 2
+  - 🇺🇸 节点 3
+  - 🇺🇸 节点 4
+  - 🇷🇺 节点 1
+  - 🇷🇺 节点 2
+  - 🇷🇺 节点 3
+  - 🇷🇺 节点 4
+  - 🇷🇺 节点 5
+  - 🇷🇺 节点 6
+  - 🇷🇺 节点 7
+  - 🇷🇺 节点 8
+  - 🇷🇺 节点 9
+  - 🇷🇺 节点 10
+  - 🇷🇺 节点 11
+  - 🇷🇺 节点 12
+  - 🇷🇺 节点 13
+  - 🇷🇺 节点 14
+  - 🇷🇺 节点 15
+  - 🇷🇺 节点 16
+  - 🇷🇺 节点 17
+  - 🇷🇺 节点 18
+  - 🇷🇺 节点 19
+  - 🇷🇺 节点 20
+  - 🇷🇺 节点 21
+  - 🇷🇺 节点 22
+  - 🇷🇺 节点 23
+  - 🇷🇺 节点 24
+  - 🇷🇺 节点 25
+  - 🇷🇺 节点 26
+  - 🇷🇺 节点 27
+  - 🇷🇺 节点 28
+  - 🇷🇺 节点 29
+  - 🇷🇺 节点 30
+  - 🇷🇺 节点 31
+  - 🇷🇺 节点 32
+  - 🇷🇺 节点 33
+  - 🇷🇺 节点 34
+  - 🇷🇺 节点 35
+  - 🇷🇺 节点 36
+  - 🇷🇺 节点 37
+  - 🇷🇺 节点 38
+  - 🇷🇺 节点 39
+  - 🇷🇺 节点 40
+  - 🇷🇺 节点 41
+  - 🇷🇺 节点 42
+  - 🇷🇺 节点 43
+  - 🇷🇺 节点 44
+  - 🇷🇺 节点 45
+  - 🇷🇺 节点 46
+  - 🇷🇺 节点 47
+  - 🇷🇺 节点 48
+  - 🇷🇺 节点 49
+  - 🇷🇺 节点 50
+  - 🇷🇺 节点 51
+  - 🇷🇺 节点 52
+  - 🇷🇺 节点 53
+  - 🇷🇺 节点 54
+  - 🇷🇺 节点 55
+  - 🇷🇺 节点 56
+  - 🇷🇺 节点 57
+  - 🇷🇺 节点 58
+  - 🇷🇺 节点 59
+  - 🇷🇺 节点 60
+  - 🇷🇺 节点 61
+  - 🇷🇺 节点 62
+  - 🇷🇺 节点 63
+  - 🇷🇺 节点 64
+  - 🇷🇺 节点 65
+  - 🇷🇺 节点 66
+  - 🇷🇺 节点 67
+  - 🇷🇺 节点 68
+  - 🇷🇺 节点 69
+  - 🇷🇺 节点 70
+  - 🇷🇺 节点 71
+  - 🇷🇺 节点 72
+  - 🇷🇺 节点 73
+  - 🇷🇺 节点 74
+  - 🇷🇺 节点 75
+  - 🇷🇺 节点 76
+  - 🇷🇺 节点 77
+  - 🇷🇺 节点 78
+  - 🇷🇺 节点 79
+  - 🇷🇺 节点 80
+  - 🇷🇺 节点 81
+  - 🇷🇺 节点 82
+  - 🇷🇺 节点 83
+  - 🇳🇱 节点 1
+  - 🏳️ 节点 1
+  - 🇰🇷 节点 1
+- name: 🇺🇸 美国
+  type: select
+  proxies:
+  - 🇺🇸 节点 1
+  - 🇺🇸 节点 2
+  - 🇺🇸 节点 3
+  - 🇺🇸 节点 4
+- name: 🇷🇺 俄罗斯
+  type: select
+  proxies:
+  - 🇷🇺 节点 1
+  - 🇷🇺 节点 2
+  - 🇷🇺 节点 3
+  - 🇷🇺 节点 4
+  - 🇷🇺 节点 5
+  - 🇷🇺 节点 6
+  - 🇷🇺 节点 7
+  - 🇷🇺 节点 8
+  - 🇷🇺 节点 9
+  - 🇷🇺 节点 10
+  - 🇷🇺 节点 11
+  - 🇷🇺 节点 12
+  - 🇷🇺 节点 13
+  - 🇷🇺 节点 14
+  - 🇷🇺 节点 15
+  - 🇷🇺 节点 16
+  - 🇷🇺 节点 17
+  - 🇷🇺 节点 18
+  - 🇷🇺 节点 19
+  - 🇷🇺 节点 20
+  - 🇷🇺 节点 21
+  - 🇷🇺 节点 22
+  - 🇷🇺 节点 23
+  - 🇷🇺 节点 24
+  - 🇷🇺 节点 25
+  - 🇷🇺 节点 26
+  - 🇷🇺 节点 27
+  - 🇷🇺 节点 28
+  - 🇷🇺 节点 29
+  - 🇷🇺 节点 30
+  - 🇷🇺 节点 31
+  - 🇷🇺 节点 32
+  - 🇷🇺 节点 33
+  - 🇷🇺 节点 34
+  - 🇷🇺 节点 35
+  - 🇷🇺 节点 36
+  - 🇷🇺 节点 37
+  - 🇷🇺 节点 38
+  - 🇷🇺 节点 39
+  - 🇷🇺 节点 40
+  - 🇷🇺 节点 41
+  - 🇷🇺 节点 42
+  - 🇷🇺 节点 43
+  - 🇷🇺 节点 44
+  - 🇷🇺 节点 45
+  - 🇷🇺 节点 46
+  - 🇷🇺 节点 47
+  - 🇷🇺 节点 48
+  - 🇷🇺 节点 49
+  - 🇷🇺 节点 50
+  - 🇷🇺 节点 51
+  - 🇷🇺 节点 52
+  - 🇷🇺 节点 53
+  - 🇷🇺 节点 54
+  - 🇷🇺 节点 55
+  - 🇷🇺 节点 56
+  - 🇷🇺 节点 57
+  - 🇷🇺 节点 58
+  - 🇷🇺 节点 59
+  - 🇷🇺 节点 60
+  - 🇷🇺 节点 61
+  - 🇷🇺 节点 62
+  - 🇷🇺 节点 63
+  - 🇷🇺 节点 64
+  - 🇷🇺 节点 65
+  - 🇷🇺 节点 66
+  - 🇷🇺 节点 67
+  - 🇷🇺 节点 68
+  - 🇷🇺 节点 69
+  - 🇷🇺 节点 70
+  - 🇷🇺 节点 71
+  - 🇷🇺 节点 72
+  - 🇷🇺 节点 73
+  - 🇷🇺 节点 74
+  - 🇷🇺 节点 75
+  - 🇷🇺 节点 76
+  - 🇷🇺 节点 77
+  - 🇷🇺 节点 78
+  - 🇷🇺 节点 79
+  - 🇷🇺 节点 80
+  - 🇷🇺 节点 81
+  - 🇷🇺 节点 82
+  - 🇷🇺 节点 83
+- name: 🇳🇱 荷兰
+  type: select
+  proxies:
+  - 🇳🇱 节点 1
+- name: 🏳️ 未知
+  type: select
+  proxies:
+  - 🏳️ 节点 1
+- name: 🇰🇷 韩国
+  type: select
+  proxies:
+  - 🇰🇷 节点 1
 - interval: 300
   lazy: true
   name: ♻️
   proxies:
-  - 🏳️ 节点 3
-  - 🏳️ 节点 10
-  - 🇺🇸 节点 96
-  - 🏳️ 节点 94
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_e8207db5
-  - 🏳️ 节点 4
+  - 🇺🇸 节点 4
+  - 🇺🇸 节点 12
   - 🇺🇸 节点 2
-  - 🇷🇺 节点 33
-  - 🇷🇺 节点 36
-  - 🇷🇺 节点 78
-  - 🇷🇺 节点 49
-  - 🇷🇺 节点 26
-  - 🇷🇺 节点 86
-  - 🇷🇺 节点 74
-  - 🇷🇺 节点 19
-  - 🇷🇺 节点 62
-  - 🇷🇺 节点 76
-  - 🇷🇺 节点 50
-  - 🇷🇺 节点 15
-  - 🇷🇺 节点 21
-  - 🇷🇺 节点 69
-  - 🇷🇺 节点 45
-  - 🇷🇺 节点 28
-  - 🇷🇺 节点 63
-  - 🇷🇺 节点 83
-  - 🇷🇺 节点 80
-  - 🇷🇺 节点 22
-  - 🇷🇺 节点 39
-  - 🇷🇺 节点 90
-  - 🇷🇺 节点 68
-  - 🇷🇺 节点 81
-  - 🇷🇺 节点 56
-  - 🇷🇺 节点 16
-  - 🇷🇺 节点 52
-  - 🇷🇺 节点 46
-  - 🇷🇺 节点 11
-  - 🇷🇺 节点 20
-  - 🇷🇺 节点 70
-  - 🇺🇸 节点 13
-  - 🇺🇸 节点 6
-  - 🇷🇺 节点 24
-  - 🇷🇺 节点 84
-  - 🇷🇺 节点 41
-  - 🇷🇺 节点 18
-  - 🇺🇸 节点 35
-  - 🇷🇺 节点 51
-  - 🇷🇺 节点 27
-  - 🇷🇺 节点 64
-  - 🇺🇸 节点 7
-  - 🇷🇺 节点 75
-  - 🇺🇸 节点 8
-  - 🇷🇺 节点 58
-  - 🇺🇸 节点 79
-  - 🇷🇺 节点 88
-  - 🇷🇺 节点 54
-  - 🇷🇺 节点 23
-  - 🇷🇺 节点 53
+  - 🏳️ 节点 97
+  - 🇮🇳 节点 20
   - 🇺🇸 节点 5
-  - 🇷🇺 节点 61
-  - 🇷🇺 节点 25
+  - 🇺🇸 节点 3
+  - 🇷🇺 节点 27
+  - 🇷🇺 节点 30
+  - 🇷🇺 节点 72
+  - 🇷🇺 节点 43
+  - 🇷🇺 节点 20
+  - 🇷🇺 节点 78
+  - 🇷🇺 节点 68
+  - 🇷🇺 节点 13
+  - 🇷🇺 节点 56
+  - 🇷🇺 节点 70
+  - 🇷🇺 节点 44
+  - 🇷🇺 节点 9
+  - 🇷🇺 节点 15
+  - 🇷🇺 节点 63
+  - 🇷🇺 节点 39
+  - 🇷🇺 节点 22
+  - 🇷🇺 节点 57
+  - 🇷🇺 节点 75
+  - 🇷🇺 节点 73
+  - 🇷🇺 节点 16
+  - 🇷🇺 节点 33
+  - 🇷🇺 节点 81
+  - 🇷🇺 节点 62
+  - 🇷🇺 节点 74
+  - 🇷🇺 节点 50
+  - 🇷🇺 节点 10
+  - 🇷🇺 节点 46
+  - 🇷🇺 节点 40
+  - 🇷🇺 节点 6
+  - 🇷🇺 节点 14
+  - 🇷🇺 节点 64
+  - 🇷🇺 节点 8
+  - 🇷🇺 节点 2
+  - 🇷🇺 节点 18
+  - 🇷🇺 节点 76
+  - 🇷🇺 节点 35
+  - 🇷🇺 节点 12
+  - 🇷🇺 节点 29
+  - 🇷🇺 节点 45
+  - 🇷🇺 节点 21
+  - 🇷🇺 节点 58
+  - 🇷🇺 节点 3
+  - 🇷🇺 节点 69
+  - 🇷🇺 节点 4
+  - 🇷🇺 节点 52
+  - 🇺🇸 节点 82
+  - 🇷🇺 节点 80
+  - 🇷🇺 节点 48
   - 🇷🇺 节点 17
+  - 🇷🇺 节点 47
+  - 🇷🇺 节点 1
+  - 🇷🇺 节点 55
+  - 🇷🇺 节点 19
+  - 🇷🇺 节点 11
+  - 🇷🇺 节点 71
+  - 🇷🇺 节点 32
+  - 🇷🇺 节点 31
+  - 🇷🇺 节点 65
+  - 🇷🇺 节点 60
+  - 🇷🇺 节点 5
+  - 🇷🇺 节点 66
+  - 🇷🇺 节点 37
+  - 🇷🇺 节点 49
+  - 🇷🇺 节点 28
+  - 🇷🇺 节点 51
+  - 🇷🇺 节点 26
+  - 🇺🇸 节点 1
+  - 🇷🇺 节点 34
+  - 🇷🇺 节点 16
+  - 🇷🇺 节点 82
+  - 🇷🇺 节点 41
+  - 🇷🇺 节点 54
+  - 🇷🇺 节点 95
+  - 🇷🇺 节点 23
+  - 🇷🇺 节点 79
+  - 🇷🇺 节点 36
+  - 🇷🇺 节点 59
+  - 🇷🇺 节点 67
+  - 🇷🇺 节点 7
+  - 🇺🇸 节点 2
+  - 🇮🇳 节点 85
   - 🇷🇺 节点 77
   - 🇷🇺 节点 38
-  - 🇷🇺 节点 37
-  - 🇷🇺 节点 71
-  - 🇷🇺 节点 66
-  - 🇺🇸 节点 9
-  - 🇷🇺 节点 72
-  - 🇺🇸 节点 43
-  - 🇺🇸 节点 55
-  - 🇷🇺 节点 34
-  - 🇷🇺 节点 57
-  - 🇷🇺 节点 32
-  - 🇺🇸 节点 1
-  - 🇷🇺 节点 40
-  - 🇺🇸 节点 14
-  - 🇺🇸 节点 91
-  - 🇷🇺 节点 47
-  - 🇷🇺 节点 60
-  - 🇺🇸 节点 92
-  - 🇷🇺 节点 29
-  - 🇷🇺 节点 87
+  - 🇷🇺 节点 24
+  - 🇷🇺 节点 83
+  - 🇷🇺 节点 25
+  - 🇳🇱 节点 1
+  - 🇷🇺 节点 53
   - 🇷🇺 节点 42
-  - 🇺🇸 节点 65
-  - 🇷🇺 节点 73
-  - 🇷🇺 节点 12
-  - 🟠🇫🇷_github.com/Ruk1ng001_158e7101
-  - 🇺🇸 节点 82
-  - 🇷🇺 节点 85
-  - 🇷🇺 节点 44
-  - 🇷🇺 节点 30
-  - 🇷🇺 节点 93
-  - 🇷🇺 节点 31
-  - 🇺🇸 节点 89
-  - 🇷🇺 节点 59
-  - 🇷🇺 节点 48
-  - 🏳️ 节点 95
-  - 🇺🇸 节点 67
-  - ⚪🏳️_github.com/Ruk1ng001_9b6fe04a
+  - 🇺🇸 节点 98
+  - 🇷🇺 节点 61
+  - 🇺🇸 节点 7
   tolerance: 50
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -890,32 +1000,12 @@ proxy-groups:
   type: select
 - interval: 300
   lazy: true
-  name: 🇺🇸
-  proxies:
-  - 🏳️ 节点 4
-  - 🇺🇸 节点 82
-  - ♻️
-  tolerance: 150
-  type: fallback
-  url: https://www.gstatic.com/generate_204
-- interval: 300
-  lazy: true
-  name: 🇰🇷
-  proxies:
-  - 🏳️ 节点 3
-  - 🏳️ 节点 10
-  - ♻️
-  tolerance: 100
-  type: fallback
-  url: https://www.gstatic.com/generate_204
-- interval: 300
-  lazy: true
   name: 📺
   proxies:
-  - 🏳️ 节点 3
-  - 🏳️ 节点 10
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_e8207db5
-  - 🏳️ 节点 4
+  - 🇺🇸 节点 4
+  - 🇺🇸 节点 12
+  - 🇮🇳 节点 20
+  - 🇺🇸 节点 5
   - ♻️
   tolerance: 100
   type: fallback
@@ -924,26 +1014,26 @@ proxy-groups:
   lazy: true
   name: 🎵
   proxies:
-  - 🏳️ 节点 3
-  - 🏳️ 节点 10
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_e8207db5
-  - 🏳️ 节点 4
-  - 🇺🇸 节点 2
-  - 🇷🇺 节点 33
-  - 🇷🇺 节点 36
-  - 🇷🇺 节点 78
-  - 🇷🇺 节点 49
-  - 🇷🇺 节点 26
-  - 🇷🇺 节点 74
-  - 🇷🇺 节点 19
-  - 🇷🇺 节点 62
-  - 🇷🇺 节点 76
-  - 🇷🇺 节点 50
+  - 🇺🇸 节点 4
+  - 🇺🇸 节点 12
+  - 🇮🇳 节点 20
+  - 🇺🇸 节点 5
+  - 🇺🇸 节点 3
+  - 🇷🇺 节点 27
+  - 🇷🇺 节点 30
+  - 🇷🇺 节点 72
+  - 🇷🇺 节点 43
+  - 🇷🇺 节点 20
+  - 🇷🇺 节点 68
+  - 🇷🇺 节点 13
+  - 🇷🇺 节点 56
+  - 🇷🇺 节点 70
+  - 🇷🇺 节点 44
+  - 🇷🇺 节点 9
   - 🇷🇺 节点 15
-  - 🇷🇺 节点 21
-  - 🇷🇺 节点 69
-  - 🇷🇺 节点 45
-  - 🇷🇺 节点 28
+  - 🇷🇺 节点 63
+  - 🇷🇺 节点 39
+  - 🇷🇺 节点 22
   - ♻️
   tolerance: 80
   type: fallback
@@ -952,36 +1042,36 @@ proxy-groups:
   lazy: true
   name: 🐧
   proxies:
-  - 🏳️ 节点 3
-  - 🏳️ 节点 10
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_e8207db5
-  - 🏳️ 节点 4
-  - 🇺🇸 节点 2
-  - 🇷🇺 节点 33
-  - 🇷🇺 节点 36
-  - 🇷🇺 节点 78
-  - 🇷🇺 节点 49
-  - 🇷🇺 节点 26
-  - 🇷🇺 节点 74
-  - 🇷🇺 节点 19
-  - 🇷🇺 节点 62
-  - 🇷🇺 节点 76
-  - 🇷🇺 节点 50
-  - 🇷🇺 节点 15
-  - 🇷🇺 节点 21
-  - 🇷🇺 节点 69
-  - 🇷🇺 节点 45
-  - 🇷🇺 节点 28
-  - 🇷🇺 节点 63
-  - 🇷🇺 节点 83
-  - 🇷🇺 节点 80
-  - 🇷🇺 节点 22
-  - 🇷🇺 节点 39
+  - 🇺🇸 节点 4
+  - 🇺🇸 节点 12
+  - 🇮🇳 节点 20
+  - 🇺🇸 节点 5
+  - 🇺🇸 节点 3
+  - 🇷🇺 节点 27
+  - 🇷🇺 节点 30
+  - 🇷🇺 节点 72
+  - 🇷🇺 节点 43
+  - 🇷🇺 节点 20
   - 🇷🇺 节点 68
-  - 🇷🇺 节点 81
+  - 🇷🇺 节点 13
+  - 🇷🇺 节点 56
+  - 🇷🇺 节点 70
+  - 🇷🇺 节点 44
+  - 🇷🇺 节点 9
+  - 🇷🇺 节点 15
+  - 🇷🇺 节点 63
+  - 🇷🇺 节点 39
+  - 🇷🇺 节点 22
+  - 🇷🇺 节点 57
+  - 🇷🇺 节点 75
+  - 🇷🇺 节点 73
   - 🇷🇺 节点 16
-  - 🇷🇺 节点 52
+  - 🇷🇺 节点 33
+  - 🇷🇺 节点 62
+  - 🇷🇺 节点 74
+  - 🇷🇺 节点 10
   - 🇷🇺 节点 46
+  - 🇷🇺 节点 40
   - ♻️
   tolerance: 100
   type: fallback
@@ -990,53 +1080,53 @@ proxy-groups:
   lazy: true
   name: 💬
   proxies:
-  - 🏳️ 节点 3
-  - 🏳️ 节点 10
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_e8207db5
-  - 🏳️ 节点 4
-  - 🇺🇸 节点 2
-  - 🇷🇺 节点 33
-  - 🇷🇺 节点 36
-  - 🇷🇺 节点 78
-  - 🇷🇺 节点 49
-  - 🇷🇺 节点 26
-  - 🇷🇺 节点 19
-  - 🇷🇺 节点 50
-  - 🇷🇺 节点 15
-  - 🇷🇺 节点 45
-  - 🇷🇺 节点 80
-  - 🇷🇺 节点 22
-  - 🇷🇺 节点 39
-  - 🇷🇺 节点 81
-  - 🇷🇺 节点 52
-  - 🇷🇺 节点 46
-  - 🇷🇺 节点 11
-  - 🇺🇸 节点 13
-  - 🇺🇸 节点 6
-  - 🇷🇺 节点 24
-  - 🇷🇺 节点 84
-  - 🇷🇺 节点 18
-  - 🇷🇺 节点 51
+  - 🇺🇸 节点 4
+  - 🇺🇸 节点 12
+  - 🇮🇳 节点 20
+  - 🇺🇸 节点 5
+  - 🇺🇸 节点 3
   - 🇷🇺 节点 27
-  - 🇷🇺 节点 64
-  - 🇺🇸 节点 7
-  - 🇷🇺 节点 75
-  - 🇷🇺 节点 23
-  - 🇷🇺 节点 53
-  - 🇷🇺 节点 17
-  - 🇷🇺 节点 37
-  - 🇷🇺 节点 71
-  - 🇷🇺 节点 66
-  - 🇺🇸 节点 9
+  - 🇷🇺 节点 30
   - 🇷🇺 节点 72
-  - 🇷🇺 节点 34
-  - 🇷🇺 节点 57
-  - 🇷🇺 节点 60
-  - 🇷🇺 节点 29
-  - 🇺🇸 节点 82
+  - 🇷🇺 节点 43
+  - 🇷🇺 节点 20
+  - 🇷🇺 节点 13
+  - 🇷🇺 节点 44
+  - 🇷🇺 节点 9
+  - 🇷🇺 节点 39
+  - 🇷🇺 节点 73
+  - 🇷🇺 节点 16
+  - 🇷🇺 节点 33
+  - 🇷🇺 节点 74
+  - 🇷🇺 节点 46
+  - 🇷🇺 节点 40
+  - 🇷🇺 节点 6
+  - 🇷🇺 节点 8
+  - 🇷🇺 节点 2
+  - 🇷🇺 节点 18
+  - 🇷🇺 节点 76
+  - 🇷🇺 节点 12
+  - 🇷🇺 节点 45
+  - 🇷🇺 节点 21
+  - 🇷🇺 节点 58
+  - 🇷🇺 节点 3
+  - 🇷🇺 节点 69
+  - 🇷🇺 节点 17
+  - 🇷🇺 节点 47
+  - 🇷🇺 节点 11
   - 🇷🇺 节点 31
-  - 🇷🇺 节点 48
-  - 🇺🇸 节点 67
+  - 🇷🇺 节点 65
+  - 🇷🇺 节点 60
+  - 🇷🇺 节点 5
+  - 🇷🇺 节点 66
+  - 🇷🇺 节点 28
+  - 🇷🇺 节点 51
+  - 🇷🇺 节点 54
+  - 🇷🇺 节点 23
+  - 🇮🇳 节点 85
+  - 🇷🇺 节点 25
+  - 🇷🇺 节点 42
+  - 🇷🇺 节点 61
   - ♻️
   tolerance: 50
   type: fallback
@@ -1045,8 +1135,8 @@ proxy-groups:
   lazy: true
   name: 📥
   proxies:
-  - 🏳️ 节点 3
-  - 🏳️ 节点 10
+  - 🇺🇸 节点 4
+  - 🇺🇸 节点 12
   - ♻️
   strategy: consistent-hashing
   type: load-balance
@@ -1055,11 +1145,11 @@ proxy-groups:
   lazy: true
   name: 🎬
   proxies:
-  - 🏳️ 节点 3
-  - 🏳️ 节点 10
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_e8207db5
-  - 🏳️ 节点 4
-  - 🇺🇸 节点 82
+  - 🇺🇸 节点 4
+  - 🇺🇸 节点 12
+  - 🇮🇳 节点 20
+  - 🇺🇸 节点 5
+  - 🇮🇳 节点 85
   - ♻️
   tolerance: 150
   type: fallback
@@ -1068,26 +1158,26 @@ proxy-groups:
   lazy: true
   name: 🎭
   proxies:
-  - 🏳️ 节点 3
-  - 🏳️ 节点 10
-  - 🏳️ 节点 4
-  - 🇺🇸 节点 2
-  - 🇷🇺 节点 33
-  - 🇷🇺 节点 36
+  - 🇺🇸 节点 4
+  - 🇺🇸 节点 12
+  - 🇺🇸 节点 5
+  - 🇺🇸 节点 3
+  - 🇷🇺 节点 27
+  - 🇷🇺 节点 30
+  - 🇷🇺 节点 72
+  - 🇷🇺 节点 43
+  - 🇷🇺 节点 20
   - 🇷🇺 节点 78
-  - 🇷🇺 节点 49
-  - 🇷🇺 节点 26
-  - 🇷🇺 节点 86
-  - 🇷🇺 节点 74
-  - 🇷🇺 节点 19
-  - 🇷🇺 节点 62
-  - 🇷🇺 节点 76
-  - 🇷🇺 节点 50
+  - 🇷🇺 节点 68
+  - 🇷🇺 节点 13
+  - 🇷🇺 节点 56
+  - 🇷🇺 节点 70
+  - 🇷🇺 节点 44
+  - 🇷🇺 节点 9
   - 🇷🇺 节点 15
-  - 🇷🇺 节点 21
-  - 🇷🇺 节点 69
-  - 🇷🇺 节点 45
-  - 🇷🇺 节点 28
+  - 🇷🇺 节点 63
+  - 🇷🇺 节点 39
+  - 🇷🇺 节点 22
   - ♻️
   tolerance: 150
   type: fallback
@@ -1096,26 +1186,26 @@ proxy-groups:
   lazy: true
   name: 🎪
   proxies:
-  - 🏳️ 节点 3
-  - 🏳️ 节点 10
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_e8207db5
-  - 🏳️ 节点 4
-  - 🇺🇸 节点 2
-  - 🇷🇺 节点 33
-  - 🇷🇺 节点 36
-  - 🇷🇺 节点 78
-  - 🇷🇺 节点 49
-  - 🇷🇺 节点 26
-  - 🇷🇺 节点 74
-  - 🇷🇺 节点 19
-  - 🇷🇺 节点 62
-  - 🇷🇺 节点 76
-  - 🇷🇺 节点 50
+  - 🇺🇸 节点 4
+  - 🇺🇸 节点 12
+  - 🇮🇳 节点 20
+  - 🇺🇸 节点 5
+  - 🇺🇸 节点 3
+  - 🇷🇺 节点 27
+  - 🇷🇺 节点 30
+  - 🇷🇺 节点 72
+  - 🇷🇺 节点 43
+  - 🇷🇺 节点 20
+  - 🇷🇺 节点 68
+  - 🇷🇺 节点 13
+  - 🇷🇺 节点 56
+  - 🇷🇺 节点 70
+  - 🇷🇺 节点 44
+  - 🇷🇺 节点 9
   - 🇷🇺 节点 15
-  - 🇷🇺 节点 21
-  - 🇷🇺 节点 69
-  - 🇷🇺 节点 45
-  - 🇷🇺 节点 28
+  - 🇷🇺 节点 63
+  - 🇷🇺 节点 39
+  - 🇷🇺 节点 22
   - 🇺🇸
   - ♻️
   tolerance: 100
@@ -1125,36 +1215,36 @@ proxy-groups:
   lazy: true
   name: 🤖
   proxies:
-  - 🏳️ 节点 3
-  - 🏳️ 节点 10
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_e8207db5
-  - 🏳️ 节点 4
-  - 🇺🇸 节点 2
-  - 🇷🇺 节点 33
-  - 🇷🇺 节点 36
-  - 🇷🇺 节点 49
-  - 🇷🇺 节点 26
-  - 🇷🇺 节点 19
-  - 🇷🇺 节点 15
-  - 🇷🇺 节点 45
-  - 🇷🇺 节点 80
-  - 🇷🇺 节点 22
-  - 🇷🇺 节点 39
-  - 🇷🇺 节点 81
-  - 🇷🇺 节点 52
-  - 🇷🇺 节点 46
-  - 🇷🇺 节点 11
-  - 🇺🇸 节点 13
-  - 🇺🇸 节点 6
-  - 🇷🇺 节点 24
-  - 🇷🇺 节点 84
-  - 🇷🇺 节点 18
-  - 🇷🇺 节点 51
+  - 🇺🇸 节点 4
+  - 🇺🇸 节点 12
+  - 🇮🇳 节点 20
+  - 🇺🇸 节点 5
+  - 🇺🇸 节点 3
   - 🇷🇺 节点 27
-  - 🇷🇺 节点 64
-  - 🇺🇸 节点 7
-  - 🇷🇺 节点 75
-  - 🇷🇺 节点 23
+  - 🇷🇺 节点 30
+  - 🇷🇺 节点 43
+  - 🇷🇺 节点 20
+  - 🇷🇺 节点 13
+  - 🇷🇺 节点 9
+  - 🇷🇺 节点 39
+  - 🇷🇺 节点 73
+  - 🇷🇺 节点 16
+  - 🇷🇺 节点 33
+  - 🇷🇺 节点 74
+  - 🇷🇺 节点 46
+  - 🇷🇺 节点 40
+  - 🇷🇺 节点 6
+  - 🇷🇺 节点 8
+  - 🇷🇺 节点 2
+  - 🇷🇺 节点 18
+  - 🇷🇺 节点 76
+  - 🇷🇺 节点 12
+  - 🇷🇺 节点 45
+  - 🇷🇺 节点 21
+  - 🇷🇺 节点 58
+  - 🇷🇺 节点 3
+  - 🇷🇺 节点 69
+  - 🇷🇺 节点 17
   - 🇺🇸
   - ♻️
   tolerance: 100
@@ -1164,36 +1254,36 @@ proxy-groups:
   lazy: true
   name: ✨
   proxies:
-  - 🏳️ 节点 3
-  - 🏳️ 节点 10
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_e8207db5
-  - 🏳️ 节点 4
-  - 🇺🇸 节点 2
-  - 🇷🇺 节点 33
-  - 🇷🇺 节点 36
-  - 🇷🇺 节点 78
-  - 🇷🇺 节点 49
-  - 🇷🇺 节点 26
-  - 🇷🇺 节点 74
-  - 🇷🇺 节点 19
-  - 🇷🇺 节点 62
-  - 🇷🇺 节点 76
-  - 🇷🇺 节点 50
-  - 🇷🇺 节点 15
-  - 🇷🇺 节点 21
-  - 🇷🇺 节点 69
-  - 🇷🇺 节点 45
-  - 🇷🇺 节点 28
-  - 🇷🇺 节点 63
-  - 🇷🇺 节点 83
-  - 🇷🇺 节点 80
-  - 🇷🇺 节点 22
-  - 🇷🇺 节点 39
+  - 🇺🇸 节点 4
+  - 🇺🇸 节点 12
+  - 🇮🇳 节点 20
+  - 🇺🇸 节点 5
+  - 🇺🇸 节点 3
+  - 🇷🇺 节点 27
+  - 🇷🇺 节点 30
+  - 🇷🇺 节点 72
+  - 🇷🇺 节点 43
+  - 🇷🇺 节点 20
   - 🇷🇺 节点 68
-  - 🇷🇺 节点 81
+  - 🇷🇺 节点 13
+  - 🇷🇺 节点 56
+  - 🇷🇺 节点 70
+  - 🇷🇺 节点 44
+  - 🇷🇺 节点 9
+  - 🇷🇺 节点 15
+  - 🇷🇺 节点 63
+  - 🇷🇺 节点 39
+  - 🇷🇺 节点 22
+  - 🇷🇺 节点 57
+  - 🇷🇺 节点 75
+  - 🇷🇺 节点 73
   - 🇷🇺 节点 16
-  - 🇷🇺 节点 52
+  - 🇷🇺 节点 33
+  - 🇷🇺 节点 62
+  - 🇷🇺 节点 74
+  - 🇷🇺 节点 10
   - 🇷🇺 节点 46
+  - 🇷🇺 节点 40
   - 🇺🇸
   - ♻️
   tolerance: 150
@@ -1203,36 +1293,36 @@ proxy-groups:
   lazy: true
   name: 🔀
   proxies:
-  - 🏳️ 节点 3
-  - 🏳️ 节点 10
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_e8207db5
-  - 🏳️ 节点 4
-  - 🇺🇸 节点 2
-  - 🇷🇺 节点 33
-  - 🇷🇺 节点 36
-  - 🇷🇺 节点 78
-  - 🇷🇺 节点 49
-  - 🇷🇺 节点 26
-  - 🇷🇺 节点 74
-  - 🇷🇺 节点 19
-  - 🇷🇺 节点 62
-  - 🇷🇺 节点 76
-  - 🇷🇺 节点 50
-  - 🇷🇺 节点 15
-  - 🇷🇺 节点 21
-  - 🇷🇺 节点 69
-  - 🇷🇺 节点 45
-  - 🇷🇺 节点 28
-  - 🇷🇺 节点 63
-  - 🇷🇺 节点 83
-  - 🇷🇺 节点 80
-  - 🇷🇺 节点 22
-  - 🇷🇺 节点 39
+  - 🇺🇸 节点 4
+  - 🇺🇸 节点 12
+  - 🇮🇳 节点 20
+  - 🇺🇸 节点 5
+  - 🇺🇸 节点 3
+  - 🇷🇺 节点 27
+  - 🇷🇺 节点 30
+  - 🇷🇺 节点 72
+  - 🇷🇺 节点 43
+  - 🇷🇺 节点 20
   - 🇷🇺 节点 68
-  - 🇷🇺 节点 81
+  - 🇷🇺 节点 13
+  - 🇷🇺 节点 56
+  - 🇷🇺 节点 70
+  - 🇷🇺 节点 44
+  - 🇷🇺 节点 9
+  - 🇷🇺 节点 15
+  - 🇷🇺 节点 63
+  - 🇷🇺 节点 39
+  - 🇷🇺 节点 22
+  - 🇷🇺 节点 57
+  - 🇷🇺 节点 75
+  - 🇷🇺 节点 73
   - 🇷🇺 节点 16
-  - 🇷🇺 节点 52
+  - 🇷🇺 节点 33
+  - 🇷🇺 节点 62
+  - 🇷🇺 节点 74
+  - 🇷🇺 节点 10
   - 🇷🇺 节点 46
+  - 🇷🇺 节点 40
   - 🇺🇸
   - ♻️
   tolerance: 150
