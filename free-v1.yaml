@@ -6,6 +6,7 @@ proxies:
   skip-cert-verify: true
   sni: vpn-jp-002.fastervpn.world
   type: hysteria2
+
 - name: 44-hysteria2-hysteria2-145039
   password: qQe1z5kU8kN6SlKnDt9Ru3Qp
   port: 443
@@ -13,11 +14,28 @@ proxies:
   skip-cert-verify: true
   sni: vpn-sg-001.fastervpn.world
   type: hysteria2
+
 proxy-groups:
 - name: select
   type: select
   proxies:
   - 12-hysteria2-hysteria2-11309677
   - 44-hysteria2-hysteria2-145039
+  - DIRECT
+
 rules:
+# 国内域名直连
+- DOMAIN-SUFFIX,cn,DIRECT
+- DOMAIN-KEYWORD,baidu,DIRECT
+- DOMAIN-KEYWORD,qq,DIRECT
+- DOMAIN-KEYWORD,weixin,DIRECT
+- DOMAIN-KEYWORD,aliyun,DIRECT
+
+# 国内 IP 直连
+- GEOIP,CN,DIRECT
+
+# 局域网直连
+- GEOIP,LAN,DIRECT
+
+# 其余境外流量走代理
 - MATCH,select
