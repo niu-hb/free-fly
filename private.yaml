@@ -1,55 +1,23 @@
-port: 7890
-socks-port: 7891
-allow-lan: false
-mode: rule
-log-level: info
-external-controller: 127.0.0.1:9090
-
-# 记住手动选择的节点（防重启重置）
-profile:
-  store-selected: true
-
-# ====== 代理节点（仅保留 12 / 44）======
 proxies:
-  # 节点 12（日本）
-  - name: 🇯🇵 日本 JP #12
-    type: hysteria2
-    server: example.com
-    port: 443
-    password: your_password
-    sni: example.com
-    skip-cert-verify: true
-
-  # 节点 44（新加坡）
-  - name: 🇸🇬 新加坡 SG #44
-    type: hysteria2
-    server: example.net
-    port: 443
-    password: your_password
-    sni: example.net
-    skip-cert-verify: true
-
-# ====== 代理组（纯手动 select）======
+- name: 12-hysteria2-hysteria2-11309677
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: vpn-jp-002.fastervpn.world
+  skip-cert-verify: true
+  sni: vpn-jp-002.fastervpn.world
+  type: hysteria2
+- name: 44-hysteria2-hysteria2-145039
+  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+  port: 443
+  server: vpn-sg-001.fastervpn.world
+  skip-cert-verify: true
+  sni: vpn-sg-001.fastervpn.world
+  type: hysteria2
 proxy-groups:
-  - name: select
-    type: select
-    proxies:
-      - 🇯🇵 日本 JP #12
-      - 🇸🇬 新加坡 SG #44
-      - DIRECT
-
-# ====== 规则 ======
+- name: select
+  type: select
+  proxies:
+  - 12-hysteria2-hysteria2-11309677
+  - 44-hysteria2-hysteria2-145039
 rules:
-  # 国内常见直连
-  - DOMAIN-SUFFIX,cn,DIRECT
-  - DOMAIN-KEYWORD,tencent,DIRECT
-  - DOMAIN-KEYWORD,baidu,DIRECT
-  - DOMAIN-KEYWORD,aliyun,DIRECT
-
-  # 局域网直连
-  - IP-CIDR,127.0.0.0/8,DIRECT
-  - IP-CIDR,192.168.0.0/16,DIRECT
-  - IP-CIDR,10.0.0.0/8,DIRECT
-
-  # 兜底：走你手动选的节点
-  - MATCH,select
+- MATCH,select
